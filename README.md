@@ -1,4 +1,5 @@
 COMP 472 Project
+
 This project compares multiple machine learning models on the CIFAR-10 dataset, including Naive Bayes, Decision Tree, MLP (Multilayer Perceptron), and VGG11.
 * It is important to note that this program is unable to save and load models previously trained properly, therefore if it the program were to run it would do the whole training process from the start.
 
