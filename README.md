@@ -20,7 +20,7 @@ Contains the implementation of the Naive Bayes classifier for image classificati
 2.	DecisionTree.py
 Contains the implementation of a Decision Tree classifier, built using recursive binary splitting.
 3.	MLP.py
-Defines the  model MLP and its training process. It includes code for training a simple neural network using PyTorch.
+Contains the implementation of the MLP model and its training process. It includes code for training a simple neural network using PyTorch.
 4.	VGG11.py
 Contains the implementation of the VGG11 convolutional neural network model. The model is built using PyTorch.
 5.	main.py
@@ -33,11 +33,11 @@ Install the required packages: pip install torch torchvision numpy scikit-learn 
 
 Data Preprocessing
 The dataset is preprocessed in the load_cifar10_data function which does the following:
-1.	Download CIFAR-10 using torchvision.datasets.CIFAR10.
-2.	Resize the images to 224x224 pixels which is needed for the VGG11 input size.
-3.	Normalize the images using ImageNet's mean and standard deviation values for VGG11.
-4.	Flatten the images for models like Naive Bayes, Decision Tree, and MLP.
-5.	Reduce the dimensionality of the images for MLP and other simpler models down to 50.
+  Downloads CIFAR-10 using torchvision.datasets.CIFAR10.
+  Resizes the images to 224x224 pixels which is needed for the VGG11 input size.
+  Normalizes the images using ImageNet's mean and standard deviation values for VGG11.
+  Flattens the images for models like Naive Bayes, Decision Tree, and MLP.
+  Reduces the dimensionality of the images for MLP and other simpler models down to 50.
 
 Running the Code
 To train and see the results for the Naive Bayes, Decision Tree, MLP, VGG11 models, execute the main.py file. The file does:
@@ -61,7 +61,7 @@ The training script will print out the following metrics for each model:
 Training Accuracy: Accuracy achieved on the training data.
 Testing Accuracy: Accuracy achieved on the test data.
 
- A confusion matrix will be displayed once the training of each model has been completed. As well,  a classification report for each model will also be generated once the program is completed.
+ A confusion matrix will be displayed once the training of each model has been completed. As well, a classification report for each model will also be generated once the program is completed.
 
 
 
